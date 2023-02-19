@@ -67,7 +67,7 @@ try:
         contents = f.readlines()
         f.close()
         if not (4 <= len(contents) <= 5):
-            errorfile = original_doc
+            errorfile = update_doc
             raise OSError
 except OSError:
     print("ERROR: document \"", errorfile, "\" doesn't contain an appropriately formatted address")

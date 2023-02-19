@@ -86,9 +86,14 @@ This is a process feedback challenge. For this challenge, you won't be
 submitting a video but instead you'll be providing a link to GitHub where you've
 put resources you've created.
 
-Work through the following steps to produce a state transition diagram for our
-basic website, with its sign-up/log in/etc. functionality, then use that diagram
-to think about planning some hypothetical tests.
+The example above used Makers Bank to show the creation of a state transition
+diagram, state transition table, and a single test case. In this challenge,
+you'll do the same steps, but for **our basic website example** we've been
+talking about all the way through this phase, with its sign-up, log in, etc.
+functionality.
+
+Work through the following steps to produce a state transition diagram, from
+that produce a state transition table, then plan a hypothetical test case.
 
 1. Write down the different **states** e.g. sign-up page
 2. Write down the different **events** e.g. user logs in
@@ -99,8 +104,8 @@ to think about planning some hypothetical tests.
 6. Design a test case that covers all states and all events/transitions at least
    once i.e. what is the starting state and what events (in what order) are
    required
-7. Commit your resources (state transition diagram and test case) to GitHub and
-   submit your challenge
+7. Commit your resources (state transition diagram, state transition table and
+   test case) to GitHub and submit your challenge
 
 | Initial State | Event | Next State | 
 |-|-|-|
