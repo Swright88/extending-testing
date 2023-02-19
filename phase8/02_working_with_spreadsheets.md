@@ -52,7 +52,7 @@ If you have problems working through the examples below, come back here.
         <li>If this doesn't solve the problem, restart VSCode</li>
     </ul>
     </p>
-</detais>
+</details>
 
 <details>
     <summary>
