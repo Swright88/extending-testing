@@ -25,12 +25,10 @@ This is all working nicely!
 > TestNG here because it has some nice features for data driven testing - I'll
 > be sure to highlight those later :)
 
-<details>
-    <summary>What are the 'necessary dependencies'?</summary>
-    <p>
-        TestNG is needed for testing (later) and two Apache POI packages are needed for interacting with spreadsheets.
-    </p>
-</details>
+#### What are the 'Necessary Dependencies'?
+
+- TestNG is needed for testing (later)
+- Two Apache POI packages are needed for interacting with spreadsheets. This is where the classes starting with `XSSF` come from.
 
 ### Troubleshooting
 

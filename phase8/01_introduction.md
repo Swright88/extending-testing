@@ -3,13 +3,13 @@
 Let's start by imagining a scenario in which data driven testing (whatever
 _that_ is) could be the solution...
 
-## Defect Reporter
+## Defect Logger
 
 The company you work for has its own tool for reporting and tracking defects -
-it's imaginatively called _Defect Reporter_. You've been asked to create a small
+it's imaginatively called _Defect Logger_. You've been asked to create a small
 regression testing suite and have been given this guidance...
 
-- Defects are reported using [this form](https://defect-logger.onrender.com/)
+- Defects are logged using [this form](https://defect-logger.onrender.com/)
 - Name, Summary and Details are all mandatory fields
 - Name must be no longer than 30 characters
 - Summary must be no longer than 50 characters
