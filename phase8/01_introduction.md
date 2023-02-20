@@ -1,13 +1,13 @@
 # Introducing Data Driven Testing
 
-Let's start by imagining a scenario in which data-driven testing (whatever
+Let's start by imagining a scenario in which data driven testing (whatever
 _that_ is) could be the solution...
 
 ## Defect Reporter
 
-The company you work for has it's own tool for reporting and tracking defects -
-it's imaginatively titled called _Defect Reporter_. You've been asked to create a
-small regression testing suite and have been given this guidance...
+The company you work for has its own tool for reporting and tracking defects -
+it's imaginatively called _Defect Reporter_. You've been asked to create a small
+regression testing suite and have been given this guidance...
 
 - Defects are reported using [this form](https://defect-logger.onrender.com/)
 - Name, Summary and Details are all mandatory fields
@@ -21,7 +21,7 @@ So you create a test suite that reflects these boundaries...
 - A test with a 50 and 51 character summary
 - A test with a 99, 100, 300 and 301 character details section
 
-The last set if tests, in particular, are problematic because they're messy and,
+The last set of tests, in particular, are problematic because they're messy and,
 worse, it's easy to get the number of characters wrong.
 
 Testing with 99 characters...
@@ -95,8 +95,8 @@ detailsField.fill(
 Also, since Defect Logger is new, the requirements are likely to change as
 feedback comes in.
 
-Wouldn't it be great if you could store these inputs somewhere separate from your
-testing suite? Then your tests would be neater and, maybe, user researchers or
+Wouldn't it be great if you could store these inputs somewhere separate from
+your test suite? Then your tests would be neater and, maybe, user researchers or
 business analysts could update the test cases.
 
 If you used a spreadsheet, you could also include a `character count` column, to
@@ -127,7 +127,7 @@ through all the rows and uses the relevant values for test inputs and
 assertions.
 
 In the next section, we'll dive into the detail of working with spreadsheets.
-Then we'll look at how to write some tests that iterate through input multiple
+Then we'll look at how to write some tests that iterate through multiple input
 values. Finally, you'll be challenged to combine both approaches and refactor
 some existing tests.
 

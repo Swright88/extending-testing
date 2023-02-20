@@ -1,8 +1,8 @@
 # Using cURL
 
-We're going to introduce some tools you can use to test APIs: cURL and Postman. 
-People who use and/or test APIs tend to have their own preferred tool(s) and 
-things they like or dislike about them. When working with cURL, these are some 
+We're going to introduce some tools you can use to test APIs: cURL and Postman.
+People who use and/or test APIs tend to have their own preferred tool(s) and
+things they like or dislike about them. When working with cURL, these are some
 of the pros and cons:
 
 * It's generally available anywhere you're working
@@ -36,9 +36,9 @@ Given that cURL can make HTTP requests, cURL is therefore another type of
 _client_ and we can use it to make requests of websites in the same sort of way
 as we can with a browser.
 
-In the previous section, we made a request to a URL of a site called ReqRes
-and got back some JSON data by using a browser. So, let's now do the same but
-with our latest HTTP client:
+In the previous section, we made a request to a URL of a site called ReqRes and
+got back some JSON data by using a browser. So, let's now do the same but with
+our latest HTTP client:
 
 ```
 % curl "https://reqres.in/api/users/1"
@@ -110,11 +110,11 @@ parsing the response...
 
 ## cURL Methods, Headers, etc.
 
-> Note: ReqRes acts in a way that looks like modifications are being made to
-> the data, but actually no changes are occurring. Later on, when we try
-> deleting a user, remember that we're seeing a response that _looks_ like it
-> was deleted successfully, but in reality that user still exists on ReqRes
-> for all the other clients out there using the site.
+> Note: ReqRes acts in a way that looks like modifications are being made to the
+> data, but actually no changes are occurring. Later on, when we try deleting a
+> user, remember that we're seeing a response that _looks_ like it was deleted
+> successfully, but in reality that user still exists on ReqRes for all the
+> other clients out there using the site.
 
 We've seen how to get more information about what cURL is requesting and seeing
 in the response, so now let's take control of those things ourselves. We're
@@ -165,9 +165,12 @@ cURL's "manual":
 ## Dev Tools
 
 cURL also shows up in Chromium Dev Tools. If you browse to a site with Dev Tools
-open on the Network tab, from a request's context menu you can select `Copy =>
-Copy as cURL` to get the same request as recorded in the Network tab, all ready
-to run as a cURL command.
+open on the Network tab, you will see one or more requests. Select the first one
+and then, from that request's context menu you can select `Copy => Copy as cURL`
+to get the same request as recorded in the Network tab, all ready to run as a
+cURL command.
+
+<img src="./02_resources/curl_in_dev_tools.png" />
 
 If you ever want to re-run a request, perhaps with slight modifications, this
 route using cURL can be a quick way to do so.

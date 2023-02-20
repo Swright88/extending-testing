@@ -1,23 +1,33 @@
 # Parameterised Testing
 
-In the previous section, you learned about one of the two main building blocks of data driven testing - how to load data from a file. In this section, you'll learn how to write a single test that gets executed multiple times with different inputs. This is called _parameterised testing_.
+In the previous section, you learned about one of the two main building blocks
+of data driven testing - how to load data from a file. In this section, you'll
+learn how to write a single test which gets executed multiple times with
+different inputs. This is called _parameterised testing_.
 
-> TestNG has particularly nice support for parameterised testing, which is why we're using it here.
+> TestNG has particularly nice support for parameterised testing, which is why
+> we're using it here.
 
 ## But First: Why Bother?
 
-It's quite common to ask this question when confronted with a new approach that will take some effort to learn, so let's deal with it now.
+It's quite common to ask this question when confronted with a new approach that
+will take some effort to learn, so let's deal with it now.
 
 Parameterised testing primarily makes your tests neater because...
 
-1. It helps to remove repetition from your test suite. Instead of having lots of almost identical tests, that differ only by their input, you can write one test that gets executed multiple times.
-2. You can collect together several test cases into one place, rather than have them scattered around the test suite.
+1. It helps to remove repetition from your test suite. Instead of having lots of
+   almost identical tests, that differ only by their input, you can write one
+   test that gets executed multiple times.
+2. You can collect together several test cases into one place, rather than have
+   them scattered around the test suite.
 
 Convinced? I hope so :)
 
 ## An Example
 
-For this section, I want you to imagine that you've switched focus and are now writing unit tests for the `Defect` class, which is part of the Defect Logger application. You'll find the code for it in the starter project.
+For this section, I want you to imagine that you've switched focus and are now
+writing unit tests for the `Defect` class, which is part of the Defect Logger
+application. You'll find the code for it in the starter project.
 
 The rules around what makes a valid `Defect` are the same as earlier...
 
@@ -26,9 +36,11 @@ The rules around what makes a valid `Defect` are the same as earlier...
 - Summary must be no longer than 50 characters
 - Details must be between 100 and 300 characters
 
-You could write test for all the important combinations of inputs but, of course, you're going to use parameterised testing instead.
+You could write tests for all the important combinations of inputs but, of
+course, you're going to use parameterised testing instead.
 
-Here's an example of parameterised testing that you can adapt to use in `DefectTest`.
+Here's an example where we've used parameterised testing in our
+implementation of `FizzBuzz`, which you might recall from earlier in the course.
 
 First, the class under test - `FizzBuzz`...
 
@@ -89,11 +101,14 @@ public class DefectTest {
 Someone made a start at implementing some parameterised tests and your task is
 to finish the job.
 
-Use parameterised testing to iterate through all of these test cases...
-- A name that is too long, a valid summary, some valid details
-- A valid name, a summary that is too long, some valid details
-- A valid name, a valid summary, details that are too short
-- A valid name, a valid summary, details that are too long
+Use parameterised testing to iterate through all of these test cases:
+
+|Name|Summary|Details|Expected URL|
+|-|-|-|-|
+|Too long|Valid|Valid|https://defect-logger.onrender.com/defects|
+|Valid|Too long|Valid|https://defect-logger.onrender.com/defects|
+|Valid|Valid|Too short|https://defect-logger.onrender.com/defects|
+|Valid|Valid|Too long|https://defect-logger.onrender.com/defects|
 
 In the next section, you'll combine everything you've learned in this phase.
 

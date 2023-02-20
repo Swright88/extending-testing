@@ -8,11 +8,11 @@ You'll be working with a spreadsheet called test_inputs.xlsx and the challenges
 will involve using Java to investigate what is in that file - so don't peek
 before you're done with this section!
 
-### First, Find the Starter Codebase
+## First, Find the Starter Codebase
 
 We've already create a Gradle project, with all of the necessary dependencies,
-for you. It's in a directory called `starter`. Find that and make sure you're
-ready to go by executing the `main` method.
+for you. It's in a directory called `starter` in this phase. Find that and make
+sure you're ready to go by executing the `main` method.
 
 You should see this somewhere in the output...
 
@@ -20,10 +20,10 @@ You should see this somewhere in the output...
 This is all working nicely!
 ```
 
-_Note that, for this project, we're using TestNG rather than JUnit. You'll see
-some small differences but they basically do the same thing. I preferred TestNG
-here because it has some nice features for data driven testing - I'll be sure to
-highlight those later :)
+> Note that, for this project, we're using TestNG rather than JUnit. You'll see
+> some small differences but they basically do the same thing. I preferred
+> TestNG here because it has some nice features for data driven testing - I'll
+> be sure to highlight those later :)
 
 <details>
     <summary>What are the 'necessary dependencies'?</summary>
@@ -32,13 +32,13 @@ highlight those later :)
     </p>
 </details>
 
-#### Troubleshooting
+### Troubleshooting
 
 If you have problems working through the examples below, come back here.
 
 <details>
     <summary>Seems like I can't import the necessary classes</summary>
-    <p>Find JAVA PROJECTS on the left hand side of VSCode, then click on the three dots to bring up the menu and choose to <code>refresh</code>.</p>
+    <p>Find JAVA PROJECTS on the left hand side of VS Code, then click on the three dots to bring up the menu and choose to <code>refresh</code>.</p>
 </details>
 
 <details>
@@ -46,10 +46,10 @@ If you have problems working through the examples below, come back here.
     <h3>Make Sure You Have Project Manager for Java Installed</h3>
     <p>
     <ul>
-        <li>Go to `Extensions` in VSCode</li>
+        <li>Go to `Extensions` in VS Code</li>
         <li>Search for Project Manager for Java</li>
         <li>Install it, if you've not done so already</li>
-        <li>If this doesn't solve the problem, restart VSCode</li>
+        <li>If this doesn't solve the problem, restart VS Code</li>
     </ul>
     </p>
 </details>
@@ -117,7 +117,7 @@ You'll need one new static field - put it at the top with the others
     static XSSFRow row;
 ```
 
-And one more line in `main`, to grab the row using its index.
+And one more line in `main`, to grab the row from the sheet, using its index
 
 ```java
     // the first row has an index of 0
@@ -178,8 +178,9 @@ Name
 
 ## Challenges
 
-Use Apache POI to investigate the test_inputs spreadsheet
-- How many column are there?
+Use Apache POI to investigate the test_inputs spreadsheet.
+
+- How many columns are there?
 - What are the column names?
 - Which columns are test inputs?
 - Which column would be used as part of an assertion?

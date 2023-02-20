@@ -19,7 +19,7 @@ array.
 
 ## Tasks
 
-- Create a spreadsheet of your test inputs and expected urls
+- Create a spreadsheet of your test inputs and expected URLs
 - Use your own name for all test cases where the data is valid
 - Create a DataProvider method
 - Inside the DataProvider method, generate a 2D array from the spreadsheet and
@@ -27,11 +27,12 @@ array.
 - Replace the test methods with one single test method that uses the
   DataProvider method
 
-## Extension
+<details>
+  <summary>Help, I'm stuck!</summary>
+  <p>If you're stuck trying to generate the 2D array from your excel data, you might find <a href="https://gist.github.com/EdwardAndress/4626c4b767614723f25d39f44603798d">this gist</a> helpful. It defines a class for extracting excel data as an <code>Object[][]</code>. To use it, copy the code into a new class called `ExcelUtils.java` then call <code>return ExcelUtils.read(path)</code> in your DataProvider method, adding the <em>path</em> to your excel file as the argument.
+  </p>
+</details>
 
-Create a new class specifically for generating the 2D array. Give it one public
-method called `readSpreadsheet` that returns a 2D array and use it in your
-DataProvider method.
 
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->
 

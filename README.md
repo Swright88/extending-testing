@@ -124,7 +124,7 @@ two-week module.
 
 <!-- OMITTED -->
 
-#### Phase Eight: Data-driven Testing
+#### Phase Eight: Data Driven Testing
 
 1. [Introduction](./phase8/01_introduction.md)
 2. [Working with Spreadsheets](./phase8/02_working_with_spreadsheets.md)
