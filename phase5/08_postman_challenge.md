@@ -18,8 +18,9 @@ body payload to include your name, the dates that you want to stay, and the
 price that you want to pay.
 2. Look at the response from the Create Booking endpoint, and find the unique
 `bookingid` value in the response.
-3. Send a request to the Get Booking endpoint, using the booking ID which you 
-just created, and confirm that you are able to retrieve the booking.
+3. Send a request to the Get Booking endpoint, modifying the endpoint's default 
+URL to incorporate the booking ID which you just created, and confirm that you 
+are able to retrieve the booking.
 4. Send a request to the Delete Booking endpoint, and see if you can delete the 
 booking ID that you just created. (Spoilers, it's not going to work - what do 
 you see in the response?)

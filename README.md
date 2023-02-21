@@ -121,6 +121,7 @@ two-week module.
 6. [Coverage](./phase7/06_coverage.md)
 7. [Using the Information](./phase7/07_using_the_information.md)
 8. [Exercises](./phase7/08_exercises.md)
+9. [Challenge](./phase7/09_challenge.md) :satellite:
 
 <!-- OMITTED -->
 
