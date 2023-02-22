@@ -10,6 +10,31 @@ see that Postman displays a new **Response** panel beneath the request:
 
 ![Postman's Response panel](../images/postman/response.png)
 
+<details>
+  <summary>:speech_balloon: What's the significance of the `1` in the 
+  URL?</summary>
+  
+  ---
+
+  This is an example of a URL which contains a variable within the path itself -
+  it may not surprise you to learn that we call these **path variables**.
+
+  If you want to see this more clearly, Postman allows you to specify variable 
+  names within the URL itself, which then allows you to modify their value on 
+  the Params tab (just like a normal query parameter).
+
+  Modify the request URL to `https://reqres.in/api/users/:id` (the colon is 
+  important - this indicates that you are specifying the name of a path 
+  variable). Now, when you look at the Params tab, you will see that `id` is 
+  appearing in the list of parameters, allowing you to specify the value (such 
+  as 1) within Postman's parameters grid.
+
+  ![Example of a path variable](../images/postman/path_variable.png)
+
+  ---
+
+</details>
+
 While the response body itself looks deceptively simple, there are a lot of 
 things going on here which will aid you in your quest for API domination:
 
