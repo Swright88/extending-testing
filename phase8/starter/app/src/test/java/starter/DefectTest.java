@@ -10,10 +10,12 @@ import org.testng.annotations.Test;
 public class DefectTest {
     @Test(dataProvider = "")
     public void isValidReturnsFalseForInvalidDefects(String name, String summary, String details) {
+        // comment these out once your data provider method works
         System.out.println("Test case");
         System.out.println("\tname: " + name);
         System.out.println("\tsummary: " + summary);
         System.out.println("\tdetails: " + details);
+        // add your test code below
     }
 
     @DataProvider(name = "")
