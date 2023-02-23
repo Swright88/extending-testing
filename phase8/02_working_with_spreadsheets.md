@@ -80,7 +80,7 @@ Now add this to the body (between the `{` and `}`) of your `main` method
 
 ```java
     // get the data
-    inputs = new File("phase6/starter/app/src/main/resources/test_inputs.xlsx");
+    inputs = new File("phase8/starter/app/src/main/resources/test_inputs.xlsx");
     // the code below can throw errors so we have to use a try-catch
     try {
         // create a workbook from the file

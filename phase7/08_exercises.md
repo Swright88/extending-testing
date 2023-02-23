@@ -192,6 +192,8 @@ we'd like to parameterise some of the settings so that we can control them from
 the command line. It would be tiresome to have to open the JMeter GUI and edit
 the plan every time we want, let's say, a different number of users!
 
+<!-- OMITTED -->
+
 Click the "Thread Group" and change these two settings:
 
 * Number of Threads (users): `${__P(threads,)}`
