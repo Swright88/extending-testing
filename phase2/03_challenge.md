@@ -8,8 +8,10 @@ then tackle the challenge.
 
 <!-- OMITTED -->
 
-The program description below isn't trivial, but you're likely to encounter
-descriptions of functionality as a tester which you will need to understand.
+> **Note**: The program description below isn't trivial, but it is realistic.
+> You're likely to encounter descriptions of functionality as a tester where you
+> will need to spend time to understand. This one is adapted from a real life
+> scenario one of your coaches had to test.
 
 ## Description
 
@@ -179,9 +181,9 @@ Steps for this challenge:
 > Note: while the challenge talks about a "first version" of the program and
 > hints that it may contain bugs, we can assure you that there are a number of
 > bugs in it! You'll need to use different testing approaches in order to
-> uncover the bugs. You're not necessarily expected to find *all* of them, but
-> speak with your coach(es) if you've been testing for a while and are not
-> finding anything of interest.
+> uncover the bugs. You're not expected to find *all* of them, but speak with
+> your coach(es) if you've been testing for a while and are not finding anything
+> of interest.
 
 ### Submission
 

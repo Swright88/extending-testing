@@ -241,12 +241,26 @@ command we ran:
 -rw-r--r--    1 paulgilson  staff    8616 21 Feb 16:22 jmeter.log
 ```
 
+Take a moment to look at the contents of `10users_10s.csv`, so you have some
+familiarity with what the output is from running your plan. Here's an example,
+which shows us the interesting columns are the first time - `timestamp` which is
+milliseconds since the [epoch](https://en.wikipedia.org/wiki/Unix_time), and
+`elapsed` which is how long the request-response took:
+
+```
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1677495154430,665,HTTP Request,200,OK,Thread Group 1-1,text,true,,1497,120,1,1,https://test.k6.io/news.php,662,0,556
+1677495155398,324,HTTP Request,200,OK,Thread Group 1-2,text,true,,1497,120,1,1,https://test.k6.io/news.php,323,0,226
+1677495156393,316,HTTP Request,200,OK,Thread Group 1-3,text,true,,1497,120,1,1,https://test.k6.io/news.php,315,0,216
+[...]
+```
+
 We're going to use `gnuplot`, which we installed earlier, to plot the data in a
 graph for us. The following command should do that for us and automatically open
 the graph in a new window:
 
 ```
-% gnuplot -e "set key autotitle columnheader; set datafile separator \",\"; plot '10users_10s.csv' with linespoints" -p
+% gnuplot -e "set key autotitle columnheader; set datafile separator \",\"; set ylabel 'Elapsed time (ms)'; set xlabel 'Time since epoch (ms)'; plot '10users_10s.csv' with linespoints" -p
 ```
 
 <details>
@@ -255,8 +269,8 @@ the graph in a new window:
 > `set key autotitle columnheader` => file contains column headers rather than
 > data on the first row
 > 
-> `set datafile separator ","` => file is CSV, with commas separating the content
-> with no spaces after them
+> `set datafile separator ","` => file is CSV, with commas separating the
+> content with no spaces after them
 > 
 > `plot '10users_10s.csv' with linespoints` => use this CSV file and draw lines
 > between the connected data points
@@ -265,9 +279,13 @@ the graph in a new window:
 > the command has run
 </details>
 
-Hopefully by this stage, you'll see a graph looking something like:
+Hopefully by this stage, you'll see a graph. The one we generated is shown below
+- yours might look similar but it could look different too:
 
-<img src="./08_resources/gnu_plot_example.png" />
+<img src="./08_resources/gnuplot_example.png" />
+
+N.B. You can leave `gnuplot` windows open, for example if you want to compare
+graphs.
 
 If you want to use some other application for reviewing CSV performance data,
 you're very welcome to do so - we're using `gnuplot` here as it's sometimes

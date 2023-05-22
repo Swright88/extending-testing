@@ -31,10 +31,10 @@ divides our password lengths into two partitions:
 so we already have two partitions and so we might consider checking passwords of
 length 5 (too short) and 10 (sufficiently long).
 
-This is good, and should catch bugs where the developer wrote completely the
-wrong character limit into the code, but if they've written `> 8` rather than
-`>= 8` those lengths of 5 and 10 wouldn't catch it. So, we make sure to include
-values on and around the boundary.
+These choices of length 5 and 10 are good, and should catch bugs where the
+developer wrote completely the wrong character limit into the code, but if
+they've written `> 8` rather than `>= 8` those lengths of 5 and 10 wouldn't
+catch it. So, we make sure to include values on and around the boundary.
 
 For our password length checking piece of code, passwords of length 7, 8 and 9
 would be really good ones to include.
@@ -54,15 +54,22 @@ Similarly, as mentioned in the previous section, larger passwords can be of
 interest too and it's likely that there's some upper limit on the password
 length that can be entered.
 
-Testing at the extremes, as well as interesting boundaries, can often be
-valuable and a source of interesting bugs.
+Testing at the extremes (like zero-length or maximum-length passwords as above),
+as well as interesting boundaries, can often be valuable and a source of
+interesting bugs.
 
 ## Exercise
 
+It's the 5th January 2023! Welcome to some time travel.
+
+> **Warning**: For the purpose of this exercise, giving you a chance to look at
+> boundaries, "today's date" is the 5th January 2023, so for all of the tests
+> you're running, imagine that's the date on which you're doing your testing.
+
 A developer has written a function in Python which can be used by different
 sites popular to **teenagers**, to check whether a user is old enough to access
-the content. The check is deliberately a simple one, just based on the user's
-birthdate.
+the content, given today's date. The check is deliberately a simple one, just
+based on the user's entered birthdate.
 
 You can find the code in the accompanying [03_resources](./03_resources/)
 folder.
@@ -72,15 +79,18 @@ restrictions by steps like:
 
 ```
 % python3 -i age_checker.py
->>> is_old_enough(2023, 1, 5, 13)
+>>> is_old_enough(2022, 1, 5, 13)
 False
 ```
 
 noting that the inputs to `is_old_enough()` are the *birth* year, month and day
-(i.e. 2023 January 5th in the example above), then the age restriction - "13" in
-the small example above, where a True response would mean the user was at least
-13 years old and allowed to view the content, and False would mean they were
-denied access.
+(i.e. 5th January 2022 in the example above), then the chosen age restriction
+imposed by the site - "13" in this case. A `True` response would mean the user
+was at least 13 years old and allowed to view the content, and `False` would
+mean they were denied access.
+
+In the example above, someone born a year ago "today" wouldn't be allowed entry,
+to this website where you need to be 13 or over!
 
 As this is a boundary value analysis test - what might be interesting tests to
 run, for the different age restriction use cases? First plan what tests you want

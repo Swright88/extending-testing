@@ -28,7 +28,8 @@ This is all working nicely!
 #### What are the 'Necessary Dependencies'?
 
 - TestNG is needed for testing (later)
-- Two Apache POI packages are needed for interacting with spreadsheets. This is where the classes starting with `XSSF` come from.
+- Two Apache POI packages are needed for interacting with spreadsheets. This is
+  where the classes starting with `XSSF` come from.
 
 ### Troubleshooting
 
@@ -54,7 +55,7 @@ If you have problems working through the examples below, come back here.
 
 <details>
     <summary>
-        Why is `File` | `XSSWorkbook` | `XSSFSheet` underlined in red?
+        Why is `File` | `XSSFWorkbook` | `XSSFSheet` underlined in red?
     </summary>
     <p>
         `File`, `XSSFWorkbook` and `XSSFSheet` are all classes that need to be imported. I'd expect the text editor to take care of that, or prompt you to do it. If not, you might find that those class names are underlined as the text editor doesn't know what they refer to. In that case, you should see a some helpful suggestions if you hover your cursor over the red line.
@@ -182,7 +183,8 @@ Use Apache POI to investigate the test_inputs spreadsheet.
 - What are the column names?
 - Which columns are test inputs?
 - Which column would be used as part of an assertion?
-- How many rows contain valid Bug Reporter inputs?
+- How many rows contain Defect Logger inputs which conform to the guidance (e.g.
+  character limits)?
 
 
 [Next Challenge](03_parameterised_testing.md)

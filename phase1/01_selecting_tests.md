@@ -12,7 +12,7 @@ possible (e.g. due to time) to run **every test** either.
 We need some tactics when designing test cases in order to be efficient, but
 also to make sure we're testing effectively and covering the important cases.
 
-For example - if you were testing a sign-up web form which had an email and
+For example - if you were testing a sign-up web form which had email and
 password fields with some validation checks, you probably wouldn't just do:
 
 * password: "a"

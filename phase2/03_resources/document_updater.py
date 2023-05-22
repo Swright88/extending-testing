@@ -37,7 +37,7 @@ list_data = list_file.readlines()
 list_file.close()
 list_docs = []
 chars = re.compile('[^a-zA-Z]')
-line = list_data[0] if listfiletype == 'allow' else list_data ####### raise IndexError on empty allow
+line = list_data[0] if listfiletype == 'allow' else list_data
 for line in list_data:
     list_docs.append(line.strip())
 
@@ -53,7 +53,6 @@ except FileNotFoundError:
     exit()
 
 errorfile = ""
-# checks to ensure we have appropriately formatted docs
 try:
     for original_doc in original_docs:
         f = open("originals/" + original_doc)
@@ -73,15 +72,13 @@ except OSError:
     print("ERROR: document \"", errorfile, "\" doesn't contain an appropriately formatted address")
     exit()
 
-# create an empty "finals" directory to populate
 if not os.path.exists("finals"):
     os.makedirs("finals")
-else: # tidy up files left from a previous run
+else:
     final_docs = os.listdir("finals")
     for final_doc in final_docs:
         os.remove("finals/" + final_doc)
 
-# determine combinations
 if listfiletype == "allow":
     in_update_as_well = False
     not_in_update_as_well = False
@@ -100,7 +97,7 @@ if listfiletype == "drop":
     for drop_doc in list_docs.copy():
         if drop_doc in original_docs:
             original_docs.remove(drop_doc)
-else: # allow
+else:
     for keep_doc in original_docs.copy():
         if keep_doc not in list_docs:
             original_docs.remove(keep_doc)
@@ -122,7 +119,7 @@ def blend(orig, update):
 for update_doc in update_docs.copy():
     if update_doc in original_docs:
         if listfiletype == "drop":
-            os.makedirs("blends")
+            if not os.path.exists("blends"): os.makedirs("blends")
             orig_f = open("originals/" + update_doc)
             orig_data = orig_f.readlines()
             orig_f.close()
@@ -134,7 +131,7 @@ for update_doc in update_docs.copy():
             f.writelines(blended)
             f.close()
             update_docs.remove(update_doc)
-            original_docs.remove(update_doc) ############ this is the point to blend files...
+            original_docs.remove(update_doc)
         else:
             original_docs.remove(update_doc)
 

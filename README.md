@@ -3,7 +3,7 @@
 _Coaching this? Read the coach guidance
 [here.](https://github.com/makersacademy/slug/blob/main/materials/universe/quality_engineering/extending_testing/HOW_TO_COACH.x.md)_
 
-In this module your objectives are:
+In this module your learning objectives are:
 
 * Learn to select valuable test cases by using techniques such as equivalence
   partitioning and boundary value analysis
@@ -12,20 +12,16 @@ In this module your objectives are:
 * Learn how to discover security issues in an application by incorporating OWASP
   vulnerabilities into test cases, and what penetration testing can discover
 * Learn to test an API by using Postman
-* Learn to perform data-driven testing by hooking external test data into
-  automated checks
 * Learn how to use static analysis techniques by integrating tools into code
 * Learn how to identify performance bottlenecks in an application by using
   JMeter
-
-<!-- OMITTED -->
+* Learn to perform data-driven testing by hooking external test data into
+  automated checks
 
 You will achieve these by working through a sequence of exercises and challenges
 over two weeks.
 
 ## Sequence
-
-<!-- OMITTED -->
 
 Work through each of these phases in sequence.
 
@@ -109,8 +105,6 @@ two-week module.
 5. [Java Static Analysis Tools](./phase6/05_static_analysis_java.md)
 6. [Extensions](./phase6/06_extensions.md)
 
-<!-- OMITTED -->
-
 #### Phase Seven: Performance Testing
 
 1. [Performance Testing](./phase7/01_performance_testing.md)
@@ -122,8 +116,6 @@ two-week module.
 7. [Using the Information](./phase7/07_using_the_information.md)
 8. [Exercises](./phase7/08_exercises.md)
 9. [Challenge](./phase7/09_challenge.md) :satellite:
-
-<!-- OMITTED -->
 
 #### Phase Eight: Data Driven Testing
 

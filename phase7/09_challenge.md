@@ -8,7 +8,7 @@ begin the challenge and start recording your video for submission.
 
 1. CSV files which JMeter writes to are created if they don't already exist, but
    are **appended to** if they do exist. If you want to re-run a test, either
-   make a new CSV file or delete the old one first.
+   make a new CSV file or rename the old one first.
 2. If and when you're starting requests at the same time, you might find your
    CSV file contains unordered data, producing some "interesting" line graphs!
    If that happens, you can sort your data by the values in the first column
@@ -16,12 +16,12 @@ begin the challenge and start recording your video for submission.
    contents in `10users_0s_sorted.csv` for your input to `gnuplot`:
 
 ```
-tail -n +2 10users_0s.csv | sort -t ";" -k 2,2 | cat <(head -1 10users_0s.csv) - | tee 10users_0s_sorted.csv
+% tail -n +2 10users_0s.csv | sort -t ";" -k 2,2 | cat <(head -1 10users_0s.csv) - | tee 10users_0s_sorted.csv
 ```
 
 ## Challenge Details
 
-For the video submission, work through the following steps:
+For the video submission, work through the following steps using the JMeter CLI:
 
 * Review the graph you generated in the previous page - talk on the video about
   what's interesting about it, how does it compare with the screenshot Makers
@@ -38,8 +38,10 @@ For the video submission, work through the following steps:
     the data if needed - see above) and talk on the video about what you're
     seeing, what's changed from the previous test(s) and what the data might be
     telling you.
-* At the end of the four tests below, speculate on what type of performance
-  testing you have been doing, and what tests you might consider running next.
+    * If useful, re-run the test, explaining why or what you're looking for.
+* After running through each of the four tests below:
+  * Speculate on what type of performance testing you have been doing.
+  * What tests might you consider running next.
 
 | test_id | threads (users/requests) | `rampup` (s) | |
 |-|-|-|-|

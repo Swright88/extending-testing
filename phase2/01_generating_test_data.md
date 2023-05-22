@@ -103,8 +103,8 @@ You also know that the requirement the company imposed was for simple,
 > encrypt data. Don't use this example for anything serious - it's intentionally
 > poor.
 
-Along with the stolen script, you have also acquire values that were stored in a
-database which are those "hidden" passwords, like this particular one:
+Along with the stolen script, you have also acquired values that were stored in
+a database which are those "hidden" passwords, like this particular one:
 
 ```python
 b'$\xed\xb8v\x10\x1f\xe2\xa6\xc2\x0f\xaf[\x98|\xc7\x84l\xe1H\x02"\xed\xbf\xde\xd7>/;.\x9bI\xdf'
@@ -123,10 +123,28 @@ try generating your own data to determine what the original, user-entered string
 was which got stored in the database in this way.
 
 If you're not sure whether you've got the correct answer, check with someone
-else in your cohort/peer group who has already done the exercise, your coach if
-you're the first one through it!
+else in your cohort/peer group who has already done the exercise, or your coach
+if you're the first one through it!
 
 <!-- OMITTED -->
+
+<details>
+  <summary>We talked above about "hiding" passwords. Strictly speaking, this is "hashing" - <i>optionally</i> if you want to know a little bit more about it, click here.</summary>
+
+  ---
+
+  We've used the concept of hiding passwords above because that's what's
+  visually happening here - a plain text password is being hidden, to a certain
+  extent, from view by signing the data using a key and a hashing algorithm.
+
+  Hashing transforms something like a string into some other value and has many
+  different uses, including storing and retrieving information more efficiently
+  from a database. You can do some more research into hashing if you want -
+  there are plenty of explanations and articles out there - but it's not
+  required reading.
+  
+  ---
+</details>
 
 ## Complexity
 
@@ -174,7 +192,7 @@ than would be tractable and pragmatic to test with. By generating some
 acceptable quantity of postcodes, probably in each of the possible formats
 linked above, we could use that sample set of postcodes to give us:
 
-* coverage across the different possible postcode formats,
+* some coverage across the different possible postcode formats,
 * and some increased confidence that postcodes matching those formats are
   acceptable/etc. in the program we're testing.
 

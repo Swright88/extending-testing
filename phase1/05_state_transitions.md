@@ -17,11 +17,10 @@ apply under certain conditions - or apply to certain states - and those will
 have transitions to other states. For example, "logging out" as an event
 wouldn't be possible from everywhere, certainly not on the login page.
 
-Actions can be transitions between states, but they can also be other effects
-resulting from an event. While a "signing up" action might take a user to the
-login page, it could instead leave the user on the sign up page (perhaps for
-signing up >1 accounts) but have the effect of adding that user's details to a
-database.
+Actions can be transitions between states, but there can also be other effects.
+While a "signing up" action might take a user to the login page, it could
+instead leave the user on the sign up page (perhaps for signing up >1 accounts)
+but have the effect of adding that user's details to a database.
 
 ## Example
 
@@ -79,6 +78,20 @@ A test which ensured we covered all states at least once might look as follows:
 * View account => Account Page
 * Back => Accounts Page
 * Set up transaction => Transaction Page
+
+## States vs Pages
+
+In the example above, we chose to map each page to a single state. While this
+can be OK to do, and worked well in that example application, it's not always
+the case that you must have one and only one state per page!
+
+A program's state or the state of data can be factors worth considering as well.
+This could be something like whether a particular user has or has not yet logged
+in to a site. In this case, a Home Page (for example) might show a "Log in" link
+for those not logged in, but a "My account" link instead for those who have
+logged in - i.e. two different states, but for just one page. Alternatively, you
+might consider whether a particular account has or has not yet been signed up,
+and therefore whether an entry for that user exists in the database.
 
 ## Challenge
 

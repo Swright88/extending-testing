@@ -28,8 +28,9 @@ it's valid for some email address, but just not the one that's specified?)
 
 If we then consider that the fields on the login page could be valid, invalid or
 blank... well, we're now at nine different combinations and they might not all
-be valuable to test separately from each other. You might notice that there's
-some overlap here with equivalence partitioning.
+be valuable to test separately from each other.
+
+> You might notice that there's some overlap here with equivalence partitioning.
 
 If we start to write out the full table, we can also include our expectations
 and probably a blank column for what we later actually observe:

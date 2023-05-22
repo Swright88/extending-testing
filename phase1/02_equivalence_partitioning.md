@@ -28,8 +28,8 @@ to give the same outcome if there's a "2" in that same place instead.
 We'd call those two passwords **equivalent** - they're not identical, but we'd
 consider them equivalent and likely only test one of them.
 
-If we had a whole set of many different passwords, we could make equivalence
-partitions - groups of passwords which we consider equivalent. If the test
+If we had a whole set of many different passwords, we could make **equivalence
+partitions** - groups of passwords which we consider equivalent. If the test
 passes (or fails!) for one from a partition or group we've created, we think
 it's highly likely that the test would behave the same way for all the others.
 
@@ -84,10 +84,14 @@ say, 32 characters at most then we might be on our way to finding a bug.
 
 ## Exercise - Invalid Passwords
 
-Next, on your own, take a few minutes to think through some password test cases
+Next, on your own, take 10 minutes or so to think through some password test cases
 which we'd expect to be determined to be invalid. Write them down and try to avoid
 equivalent passwords - if you write one down that's equivalent, that's OK, just
 group it with any others and keep going.
+
+> **Note**: Take another look through what the validation is checking for, at
+> the top of this page, if you're short of ideas or not sure what sorts of
+> things could "go wrong".
 
 Once you're done, have a look at how many different groups you created. If you
 tested just one invalid password from each, how **confident** would you be that
@@ -112,8 +116,8 @@ was as follows:
   * At least 1 number
 * For the first, anything less than 7 should be the same, but 0 characters could
   be worth including as a special case
-* For each of the other three, it's when there are 0 of that type of character
-  present
+* For each of the other three, it's invalid when there are 0 of that type of
+  character present
 * Create passwords that are otherwise valid, satisfying all the other rules
   apart from the one rule we're testing
 * Create passwords that don't satisfy >1 of the rules at the same time e.g. too

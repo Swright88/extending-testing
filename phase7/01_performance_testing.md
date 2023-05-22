@@ -16,6 +16,8 @@ pages taking over 10s. As the day progresses and the teams ponder why it's slow,
 new reports come in that it feels like it's getting worse. Then, it crashes
 again.
 
+The site clearly has numerous problems and doesn't _perform_ well.
+
 ## More Non-functional Testing
 
 Another non-functional characteristic of a product is its performance and hence
@@ -44,7 +46,7 @@ There are a number of different variants or types of performance testing. Here,
 we'll discuss three of the main ones - **stress**, **load** and **soak** and how
 these all relate to the, rather catastrophic, example scenario above.
 
-### Stress
+### Stress - when does it break?
 
 Stress testing is the most extreme of the three. It's essentially designed to
 determine what the potential operational capacity is, by stressing the system
@@ -69,7 +71,7 @@ sufficient.
 Stress testing can help tell us our limits and also how at risk we are of
 encountering a serious problem.
 
-### Load
+### Load - how does it perform under normal conditions?
 
 Load testing is the more gentle and normal of the three, but is still vital.
 Simply put, load testing tests with what's expected to be a "normal" load. This
@@ -95,7 +97,7 @@ is enough to test with and report against. Determining expected or acceptable
 performance can be just as difficult! We'll come back to this again in the next
 page.
 
-### Soak
+### Soak - can it cope with normal load over a longer time?
 
 Soak testing is a sort of sub-category of load testing in that it too uses a
 normal or expected load on the system. Its angle though is to look at what
