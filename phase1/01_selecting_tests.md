@@ -19,7 +19,7 @@ password fields with some validation checks, you probably wouldn't just do:
 * password: "b"
 * password: "c"
 * ...
-
+* ...
 and so on. Not only are there too many possible inputs for email and password,
 but you've got those in combination with each other as well. On top of that,
 there are probably some interesting "special cases" we might want to consider,
