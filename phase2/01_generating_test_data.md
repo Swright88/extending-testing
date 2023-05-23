@@ -179,7 +179,7 @@ formats](https://en.wikipedia.org/wiki/Postcodes_in_the_United_Kingdom#Validatio
 >>> import random
 >>> alpha = list(map(chr, range(65, 91)))
 >>> def make_postcode():
-...     random.choice(alpha) + str(random.randint(0,9)) + " " + str(random.randint(0,9)) + random.choice(alpha) + random.choice(alpha)
+...     print(random.choice(alpha) + str(random.randint(0,9)) + " " + str(random.randint(0,9)) + random.choice(alpha) + random.choice(alpha))
 ... 
 >>> make_postcode()
 'K6 1JD'
@@ -228,6 +228,7 @@ Notes:
 
 We'll look at some more solutions for the problem of complex test data in the
 next section.
+
 
 [Next Challenge](02_fake_data.md)
 
