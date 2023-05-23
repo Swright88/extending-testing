@@ -1,6 +1,8 @@
 # Test cases relating to the State transition Table 
 
-Please Note: Target refers to a name and address in the following document.
+* Please Note: Target refers to a name and address in the following document.
+
+Before starting testing, I can see that there is no dropslist currently. This should be created by our programming when it is first utilised. 
 
 1
 * Start: Target Added to Originals
