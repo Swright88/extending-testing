@@ -1,4 +1,4 @@
-Bug 1.1
+# Bug 1.1
 
 ## Summary
 
