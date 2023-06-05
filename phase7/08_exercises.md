@@ -56,7 +56,7 @@ We're going to run some performance tests on a public website -
 https://test.k6.io - which is designed for this sort of thing, but:
 
 > Caution: don't go running performance tests against other sites without
-> permission! You might end up doing a [Denial of Service (Dos)
+> permission! You might end up doing a [Denial of Service (DoS)
 > attack](https://en.wikipedia.org/wiki/Denial-of-service_attack), which is most
 > likely illegal.
 

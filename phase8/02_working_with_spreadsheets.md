@@ -4,13 +4,13 @@ In this section you'll learn how to read from spreadsheets. I'll walk you
 through an example - you should code along with me - and then I'll set you some
 challenges.
 
-You'll be working with a spreadsheet called test_inputs.xlsx and the challenges
-will involve using Java to investigate what is in that file - so don't peek
-before you're done with this section!
+You'll be working with a spreadsheet called `test_inputs.xlsx` and the
+challenges will involve using Java to investigate what is in that file - so
+don't peek before you're done with this section!
 
 ## First, Find the Starter Codebase
 
-We've already create a Gradle project, with all of the necessary dependencies,
+We've already created a Gradle project, with all of the necessary dependencies,
 for you. It's in a directory called `starter` in this phase. Find that and make
 sure you're ready to go by executing the `main` method.
 
@@ -81,7 +81,7 @@ Now add this to the body (between the `{` and `}`) of your `main` method
 
 ```java
     // get the data
-    inputs = new File("phase8/starter/app/src/main/resources/test_inputs.xlsx");
+    inputs = new File("app/src/main/resources/test_inputs.xlsx");
     // the code below can throw errors so we have to use a try-catch
     try {
         // create a workbook from the file
