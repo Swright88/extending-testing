@@ -40,7 +40,7 @@ theatres where customers can select a seat on a page that includes a graphic
 showing the positions of available seats.
 
 The customers are also informed that the different price bands of seats are
-shown with colours - purple for the most expensive, then red, then orange, while
+shown with colours - orange for the most expensive, then red, then purple, while
 green ones are the cheapest due to restricted visibility of the stage. The
 graphic is as follows:
 
@@ -63,9 +63,9 @@ page and describe its various elements like links, images and headings?
 
 If you came to the conclusion that screen readers must use HTML tags and their
 attributes, you're correct! So the interesting thing here is that screen readers
-rely on information that is not visible on the page (as do automated tools like
-Playwright, as you know very well!) and, as a consequence, are easily missed by
-developers, user researchers, product managers, designers and stakeholders.
+rely on information that is not visible on the page (as do automation tools, as
+you know very well!) and, as a consequence, are easily missed by developers, 
+user researchers, product managers, designers and stakeholders.
 
 Consider these two images. The first shows a page with poor accessibility for
 screen readers.
@@ -156,7 +156,7 @@ People with dyslexia, autism or other learning difficulties might be able to
 access and interact with the content, but may have impairments around trying to
 understand what it means.
 
-[Take a look at the UK Governments poster's about designing for users with
+[Take a look at the UK Governments posters about designing for users with
 impairments](https://github.com/UKHomeOffice/posters/blob/master/accessibility/dos-donts/posters_en-UK/accessibility-posters-set.pdf),
 particularly those about users on the autism spectrum and users with dyslexia.
 

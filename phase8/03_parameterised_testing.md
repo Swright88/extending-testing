@@ -50,11 +50,11 @@ class FizzBuzz {
         if(number % 15 == 0) {
             return "FizzBuzz";
         } else if(number % 3 == 0) {
-            return "Fizz"
+            return "Fizz";
         } else if(number % 5 == 0) {
-            return "Buzz"
+            return "Buzz";
         } else {
-            return number.toString()
+            return number.toString();
         }
     }
 }
@@ -68,8 +68,8 @@ class FizzBuzzTest {
 
     // note that the test now takes one argument - multipleOfThree
     @Test(dataProvider = "multiplesOfThree")
-    public void forMultiplesOfThreeRerurnFizz(Integer multipleOfThree) {
-        Assert.assertEquals(FizzBuzz.play(multipleOfThree), "Fizz")
+    public void forMultiplesOfThreeReturnFizz(Integer multipleOfThree) {
+        Assert.assertEquals(FizzBuzz.play(multipleOfThree), "Fizz");
     }
 
     // this is where we create the test inputs
@@ -78,7 +78,7 @@ class FizzBuzzTest {
     @DataProvider(name = "multiplesOfThree")
     public Object[][] multiplesOfThreeGenerator() {
         // a 2D array of numbers to use as test inputs
-        return new Object[][] {{3}, {6}, {9}, {12}}
+        return new Object[][] {{3}, {6}, {9}, {12}};
     }
 }
 ```

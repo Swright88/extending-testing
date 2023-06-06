@@ -2,7 +2,7 @@
 
 In this section we'll introduce some tools that you can use to perform
 accessibility testing but these tools will not automate everything for you.
-You'll need to do some manual testing too.
+You'll need to do some exploratory testing too.
 
 ## Task: Choose Some Sites to Test
 
@@ -51,10 +51,10 @@ into what it has found in too much detail, just yet.
 
 ## Lighthouse
 
-Google Chrome has its own Dev Tools built-in tool called Lighthouse, which can
+Google Chrome's Dev Tools includes a built-in tool called Lighthouse, which can
 also be used for inspecting accessibility. Like WAVE, it is only an automated
-tool and can't replace manual, human thinking and analysis, but it's another aid
-which you could consider using.
+tool and can't replace human thinking and analysis, but it's another aid which 
+you could consider using.
 
 ### Usage
 

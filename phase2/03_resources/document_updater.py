@@ -25,6 +25,7 @@ try:
         raise OSError
     elif lists_found == 0:
         raise FileNotFoundError
+        
 except FileNotFoundError:
     print("ERROR: no droplist nor allowlist found in target directory")
     exit()
@@ -147,4 +148,4 @@ try:
     shutil.rmtree("blends")
 except FileNotFoundError:
     pass
-target
+# target

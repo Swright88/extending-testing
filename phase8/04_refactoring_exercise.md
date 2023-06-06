@@ -12,10 +12,10 @@ your job will be to refactor them.
 
 ## The Missing Piece of This Jigsaw
 
-The one thing we're yet to cover is this - reading from an excel file in a
-DataProvider method. To make this work, once you've created the spreadsheet,
-you'll need to grab all the test inputs from the file and return them as a 2D
-array.
+The one thing we're yet to cover is this - reading from a Microsoft Excel file
+in a DataProvider method. To make this work, once you've created the
+spreadsheet, you'll need to grab all the test inputs from the file and return
+them as a 2D array.
 
 ## Tasks
 
@@ -29,7 +29,7 @@ array.
 
 <details>
   <summary>Help, I'm stuck!</summary>
-  <p>If you're stuck trying to generate the 2D array from your excel data, you might find <a href="https://gist.github.com/EdwardAndress/4626c4b767614723f25d39f44603798d">this gist</a> helpful. It defines a class for extracting excel data as an <code>Object[][]</code>. To use it, copy the code into a new class called `ExcelUtils.java` then call <code>return ExcelUtils.read(path)</code> in your DataProvider method, adding the <em>path</em> to your excel file as the argument.
+  <p>If you're stuck trying to generate the 2D array from your Excel data, you might find <a href="https://gist.github.com/EdwardAndress/4626c4b767614723f25d39f44603798d">this gist</a> helpful. It defines a class for extracting Excel data as an <code>Object[][]</code>. To use it, copy the code into a new class called `ExcelUtils.java` then call <code>return ExcelUtils.read(path)</code> in your DataProvider method, adding the <em>path</em> to your Excel file as the argument.
   </p>
 </details>
 

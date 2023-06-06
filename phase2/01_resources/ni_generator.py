@@ -1,15 +1,23 @@
 import random
 
 def generate_ni_number():
-    alphabet = 'ABCDEFGHJKLMNPRTWXYZ'
+    alphabet = 'ABCEGHJKLMNPRTWXYZ'
     digits = '0123456789'
+    first2letters = False
     ni_numbers = []
 
+        # Create the NI number, removing letters that aren't used. 
     for _ in range(1000):
-        first_letter = random.choice(alphabet.replace('D', '').replace('F', '').replace('I', '').replace('Q', '').replace('U', '').replace('V', ''))
+        first_letter = random.choice(alphabet)
         second_letter = random.choice(alphabet.replace('O', ''))
         numbers = ''.join(random.choices(digits, k=6))
-        suffix = random.choice(alphabet)
+        suffix = random.choice("ABCD")
+
+        while not first2letters:
+            first_letter = random.choice(alphabet)
+            second_letter = random.choice(alphabet.replace('O', ''))
+            if first_letter + second_letter not in ("BG","GB","NK","KN","TN","NT", "ZZ"):
+                first2letters = True
 
         # Randomly choose the format for the NI number
         if random.choice([True, False]):

@@ -23,32 +23,24 @@ later on in live, for the performance to suddenly become a temporary or more
 long-term issue.
 
 With these tests likely to be expensive (cf. end-to-end tests costs), choosing
-how to get appropriate coverage of different scenarios but at an efficient
-costs, is likely to be necessary. You can't run everything, so once again you'll
-be choosing what to run based on factors such as risk or giving appropriate
-coverage, say across all the different parts of a site.
+how to get appropriate coverage of different scenarios but at an acceptable
+cost of time or money or both, is likely to be necessary. You can't run
+everything, so once again you'll be choosing what to run based on factors such
+as risk or giving appropriate coverage, say across all the different parts of a
+site.
 
-In addition to different cases, you might have over environmental concerns to
+In addition to different cases, you might have other environmental concerns to
 include - perhaps your system under test can be installed on customers' premises
 and hence performance testing needs to include different operating systems or
 server capabilities. The list of possibilities is endless, so work with the team
 and relevant stakeholders to determine what is *appropriate in your context*.
 
-<!-- OMITTED -->
-
-coverage and test cases
-
-* Factors: from the earlier examples, other factors like the number of users or
-  what actions/operations are being carried out can make up a large piece of the
-  puzzle around performance testing. There's overlap with environments here too,
-  as those can be both important factors to consider when setting up, but might
-  be something to vary during the tests as well (e.g. different OS versions,
-  different AWS instances' capabilities).
-
-* test cases and coverage - maybe it's just N users, but it could be more
-  complicated than that so how do you pick which cases to do; time is a
-  consideration as it's an e2e test and these things tend to be slower/more
-  costly
+From the earlier examples, other factors like the number of users or what
+actions/operations are being carried out can make up a large piece of the puzzle
+around performance testing. There's overlap with environments here too, as those
+can be both important factors to consider when setting up, but might be
+something to vary during the tests as well (e.g. different OS versions,
+different AWS instances' capabilities).
 
 > Exercise continued: After discussion with the team, you create a lot more test
 > cases for the particular environment you have and then redo the performance

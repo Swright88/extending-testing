@@ -1,7 +1,5 @@
 from faker import Faker
 import os
-from subprocess import call
-
 
 fake = Faker('en_UK')
 
@@ -14,6 +12,7 @@ def add_target_to_directory(target, directory):
     with open(filepath, 'a') as file:
         file.write(f"{target['name']}\n")
         file.write(f"{target['address']}\n\n")
+        
 
 # Function to add surname to allowlist
 def add_surname_to_allowlist(surname):
@@ -53,7 +52,7 @@ while True:
     elif choice == '2':
         # Add an update manually
         original_surname = input("Enter the surname of the original target: ")
-        original_filename = f"{original_surname}.txt"
+        original_filename = f"{original_surname}"
         original_filepath = os.path.join("originals", original_filename)
         if not os.path.exists(original_filepath):
             print("Original target not found. Please create the original target first.")

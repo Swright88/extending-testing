@@ -8,7 +8,7 @@ const app = express()
 const port = 3000
 
 // second, more generic, solution is this one:
-// app.disable('x-powered-by')
+app.disable('x-powered-by')
 
 app.get('/', (req, res) => {
     // first solution is this one:
