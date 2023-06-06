@@ -8,7 +8,7 @@ begin the challenge and start recording your video for submission.
 
 1. CSV files which JMeter writes to are created if they don't already exist, but
    are **appended to** if they do exist. If you want to re-run a test, either
-   make a new CSV file or rename the old one first.
+   choose a new CSV filename or rename the old one first.
 2. If and when you're starting requests at the same time, you might find your
    CSV file contains unordered data, producing some "interesting" line graphs!
    If that happens, you can sort your data by the values in the first column
@@ -21,7 +21,7 @@ begin the challenge and start recording your video for submission.
 
 ## Challenge Details
 
-For the video submission, work through the following steps using the JMeter CLI:
+For your video submission, work through the following steps using the JMeter CLI:
 
 * Review the graph you generated in the previous page - talk on the video about
   what's interesting about it, how does it compare with the screenshot Makers

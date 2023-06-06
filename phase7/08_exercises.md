@@ -31,6 +31,10 @@ JMeter has two modes - a GUI (graphical user interface) which will allow you to
 build and configure a test plan, and a CLI (command line interface) which will
 allow you to run the test plan you created.
 
+> __Warning__: make sure you're in the right JMeter mode as you follow through
+> the exercises in this page and the challenge that follows afterwards! The
+> curriculum material tells you what to use, at each step.
+
 ## Installation
 
 Download the `.zip` binary variant of Apache JMeter from
@@ -44,7 +48,7 @@ move on to "Creating a Test Plan" below, while the installation of `gnuplot`
 runs in the background:
 
 ```
-brew install gnuplot
+% brew install gnuplot
 ```
 
 ## Creating a Test Plan
@@ -103,7 +107,7 @@ we need to tell it what to do! Click on it to open it, then change these
 settings:
 
 * Protocol (http): `https`
-* Server name or IP: `test.k6.io`
+* Server Name or IP: `test.k6.io`
 * Path: `/news.php`
 
 Nothing else needs to be changed here, just those three settings.
@@ -243,7 +247,7 @@ command we ran:
 
 Take a moment to look at the contents of `10users_10s.csv`, so you have some
 familiarity with what the output is from running your plan. Here's an example,
-which shows us the interesting columns are the first time - `timestamp` which is
+which shows us the interesting columns are the first `timestamp` which is
 milliseconds since the [epoch](https://en.wikipedia.org/wiki/Unix_time), and
 `elapsed` which is how long the request-response took:
 
@@ -279,17 +283,17 @@ the graph in a new window:
 > the command has run
 </details>
 
-Hopefully by this stage, you'll see a graph. The one we generated is shown below
-- yours might look similar but it could look different too:
+Hopefully by this stage, you'll see a graph. The one we generated is shown
+below - yours might look similar but it could look different too, and that's OK:
 
 <img src="./08_resources/gnuplot_example.png" />
 
-N.B. You can leave `gnuplot` windows open, for example if you want to compare
-graphs.
+_N.B. You can leave_ `gnuplot` _windows open and have many open at the same time,
+for example if you want to compare graphs._
 
 If you want to use some other application for reviewing CSV performance data,
 you're very welcome to do so - we're using `gnuplot` here as it's sometimes
-convenient to have a command line program you can quickly use (cf. cURL in an
+convenient to have a command line program you can quickly use (cf. `cURL` in an
 earlier phase).
 
 [Next Challenge](09_challenge.md)

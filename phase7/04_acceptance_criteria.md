@@ -41,7 +41,7 @@ is not *acceptable*.
 > small degradation of up to 5% would be acceptable, given the huge number of
 > new features and contract-winning functionality that version 2.2 will bring.
 > You decide to re-run your tests another couple of times and find that after
-> the 8% degradation, the next runs show 6% then 4% degradation. What would you
+> the 8% degradation, the next runs show 5% then 4% degradation. What would you
 > do next?
 
 <details>
